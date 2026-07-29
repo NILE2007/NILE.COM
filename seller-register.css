@@ -1,0 +1,59 @@
+// ===============================
+// SELLER REGISTRATION
+// ===============================
+
+const registerBtn = document.getElementById("registerBtn");
+
+if(registerBtn){
+
+    registerBtn.onclick = registerSeller;
+
+}
+
+function registerSeller(){
+
+    const name = document.getElementById("name").value.trim();
+
+    const email = document.getElementById("email").value.trim();
+
+    const password = document.getElementById("password").value.trim();
+
+    if(!name || !email || !password){
+
+        alert("Please fill in all fields.");
+
+        return;
+
+    }
+
+    if(users.some(user => user.email === email)){
+
+        alert("Email already exists.");
+
+        return;
+
+    }
+
+    const newSeller = {
+
+        id: Date.now(),
+
+        name,
+
+        email,
+
+        password,
+
+        role: "seller"
+
+    };
+
+    users.push(newSeller);
+
+    localStorage.setItem("users", JSON.stringify(users));
+
+    alert("Seller account created successfully!");
+
+    window.location = "login.html";
+
+}

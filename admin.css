@@ -1,0 +1,301 @@
+/* ===========================
+   GOOGLE FONT & RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f6fa;
+    color:#333;
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+    width:260px;
+    background:#3b2415;
+    color:white;
+    padding:30px 0;
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    overflow:auto;
+}
+
+.sidebar h2{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:45px;
+    letter-spacing:3px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:18px 30px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    transition:.3s;
+    font-size:16px;
+}
+
+.sidebar li:hover{
+    background:#a8743a;
+}
+
+.sidebar li.active{
+    background:#c58d4f;
+}
+
+.sidebar i{
+    width:20px;
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+.main{
+    margin-left:260px;
+    width:calc(100% - 260px);
+    padding:35px;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+header h1{
+    font-size:32px;
+}
+
+.admin{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:white;
+    padding:10px 18px;
+    border-radius:50px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.admin i{
+    font-size:28px;
+    color:#a8743a;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:40px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#777;
+    margin-bottom:15px;
+    font-weight:500;
+}
+
+.card span{
+    font-size:36px;
+    font-weight:700;
+    color:#3b2415;
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+.table-section{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.table-section h2{
+    margin-bottom:25px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#f3f3f3;
+}
+
+th{
+    padding:18px;
+    text-align:left;
+    font-weight:600;
+}
+
+td{
+    padding:18px;
+    border-bottom:1px solid #ececec;
+    vertical-align:middle;
+}
+
+tbody tr:hover{
+    background:#fafafa;
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.product-img{
+    width:60px;
+    height:60px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* ===========================
+   STATUS
+=========================== */
+
+.status{
+    padding:8px 14px;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.pending{
+    background:#fff3cd;
+    color:#856404;
+}
+
+.approved{
+    background:#d4edda;
+    color:#155724;
+}
+
+.rejected{
+    background:#f8d7da;
+    color:#721c24;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.actions{
+    display:flex;
+    gap:10px;
+}
+
+.actions button{
+    border:none;
+    cursor:pointer;
+    padding:10px 14px;
+    border-radius:8px;
+    color:white;
+    transition:.3s;
+}
+
+.approve-btn{
+    background:#28a745;
+}
+
+.reject-btn{
+    background:#dc3545;
+}
+
+.delete-btn{
+    background:#444;
+}
+
+.actions button:hover{
+    opacity:.85;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.sidebar{
+    width:80px;
+}
+
+.sidebar h2{
+    font-size:18px;
+}
+
+.sidebar li{
+    justify-content:center;
+    padding:18px;
+}
+
+.sidebar li{
+    font-size:0;
+}
+
+.sidebar li i{
+    font-size:20px;
+}
+
+.main{
+    margin-left:80px;
+    width:calc(100% - 80px);
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+table{
+    font-size:14px;
+}
+
+}
