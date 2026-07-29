@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NILE Admin</title>
+
+<link rel="stylesheet" href="admin.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <h2>NILE</h2>
+
+        <ul>
+
+            <li class="active">
+                <i class="fa-solid fa-chart-line"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-box"></i>
+                Products
+            </li>
+<li>
+
+<a href="admin-orders.html">
+
+Orders
+
+</a>
+
+</li>
+
+            <li>
+                <i class="fa-solid fa-user"></i>
+                Sellers
+            </li>
+
+            <li>
+                <i class="fa-solid fa-cart-shopping"></i>
+                Orders
+            </li>
+
+            <li>
+                <i class="fa-solid fa-users"></i>
+                Customers
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main class="main">
+
+        <header>
+
+            <h1>Dashboard</h1>
+
+            <div class="admin">
+
+                <i class="fa-solid fa-user-circle"></i>
+
+                Admin
+
+            </div>
+
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+
+                <h3>Total Products</h3>
+
+                <span id="totalProducts">0</span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Pending</h3>
+
+                <span id="pendingProducts">0</span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Approved</h3>
+
+                <span id="approvedProducts">0</span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Sellers</h3>
+
+                <span id="sellerCount">0</span>
+
+            </div>
+
+        </section>
+
+        <section class="table-section">
+
+            <h2>Pending Products</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Image</th>
+
+                        <th>Name</th>
+
+                        <th>Seller</th>
+
+                        <th>Price</th>
+
+                        <th>Status</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="productTable">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+<h2>Seller Applications</h2>
+
+<table class="admin-table">
+
+    <thead>
+
+        <tr>
+
+            <th>Business</th>
+            <th>Owner</th>
+            <th>Email</th>
+            <th>Country</th>
+            <th>Status</th>
+            <th>Actions</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody id="sellerApplicationsTable">
+
+    </tbody>
+
+</table>
+
+
+<script src="admin.js"></script>
+
+</body>
+</html>

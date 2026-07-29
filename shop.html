@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NILE | Shop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="shop.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+NAVBAR
+========================= -->
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">NILE</a>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- =========================
+SHOP HERO
+========================= -->
+
+<section class="shop-hero">
+
+    <div class="container">
+
+        <h1>Discover Africa's Finest Products</h1>
+
+        <p>
+
+            Authentic products from talented African artisans and trusted businesses.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =========================
+SHOP
+========================= -->
+
+<section class="shop">
+
+    <div class="container">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search African products...">
+
+        </div>
+
+
+
+        <div class="category-filter">
+
+            <button class="category-btn active">All</button>
+            <button class="category-btn">Home Decor</button>
+            <button class="category-btn">Fashion</button>
+            <button class="category-btn">Beauty</button>
+            <button class="category-btn">Food</button>
+
+        </div>
+
+        <div id="productGrid" class="product-grid">
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="shop.js"></script>
+<div id="toast"></div>
+</body>
+</html>

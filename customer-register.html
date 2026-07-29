@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NILE | Customer Registration</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <h1 class="logo">NILE</h1>
+
+        <h2>Create Your Account</h2>
+
+        <p class="subtitle">
+            Join NILE and discover authentic African products.
+        </p>
+
+        <form id="registerForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Full Name"
+                required>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                required>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                required>
+
+            <input
+                type="text"
+                id="country"
+                placeholder="Country"
+                required>
+
+            <input
+                type="text"
+                id="city"
+                placeholder="City"
+                required>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Create Password"
+                required>
+
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm Password"
+                required>
+
+            <button type="submit">
+
+                Create Account
+
+            </button>
+
+        </form>
+
+        <p class="bottom-text">
+
+            Already have an account?
+
+            <a href="login.html">
+
+                Sign In
+
+            </a>
+
+        </p>
+
+        <hr>
+
+        <p class="bottom-text">
+
+            Want to sell on NILE?
+
+            <a href="sell.html">
+
+                Become a Seller
+
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+<div id="toast"></div>
+
+<script src="toast.js"></script>
+
+<script src="customer-register.js"></script>
+
+</body>
+
+</html>

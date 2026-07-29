@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NILE | Seller Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="seller-dashboard.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= Sidebar ================= -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <h2>NILE</h2>
+
+    </div>
+
+    <ul>
+
+       <li id="dashboardBtn" class="active">
+    <i class="fa-solid fa-house"></i>
+    <span>Dashboard</span>
+</li>
+
+<li id="productsBtn">
+    <i class="fa-solid fa-box"></i>
+    <span>Products</span>
+</li>
+
+<li id="addProductBtn">
+    <i class="fa-solid fa-plus"></i>
+    <span>Add Product</span>
+</li>
+
+<li id="ordersBtn">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span>Orders</span>
+</li>
+
+<li id="analyticsBtn">
+    <i class="fa-solid fa-chart-line"></i>
+    <span>Analytics</span>
+</li>
+
+<li id="settingsBtn">
+    <i class="fa-solid fa-gear"></i>
+    <span>Settings</span>
+</li>
+
+<li id="logoutBtn">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    <span>Logout</span>
+</li>
+    </ul>
+
+</aside>
+
+<!-- ================= Main ================= -->
+
+<main class="main">
+
+<header>
+
+<h1>
+
+Welcome,
+
+<span id="sellerName"></span>
+
+👋
+
+</h1>
+
+</header>
+
+<!-- Dashboard Cards -->
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Total Products</h3>
+
+<span id="productCount">0</span>
+
+</div>
+
+<div class="card">
+
+<h3>Pending</h3>
+
+<span id="pendingCount">0</span>
+
+</div>
+
+<div class="card">
+
+<h3>Approved</h3>
+
+<span id="approvedCount">0</span>
+
+</div>
+
+</div>
+
+<!-- Page Content -->
+
+<div id="pageContent">
+
+<h2 style="margin-bottom:25px;">
+
+My Products
+
+</h2>
+
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:25px;">
+
+<h2>My Products</h2>
+
+<button class="submit-btn" id="showForm">
+
++ Add Product
+
+</button>
+
+</div>
+
+<div id="sellerContent">
+
+<div class="product-grid" id="productGrid"></div>
+
+</div>
+
+</div>
+
+</main>
+
+<script src="seller-dashboard.js"></script>
+
+</body>
+
+</html>

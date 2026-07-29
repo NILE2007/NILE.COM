@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NILE | Checkout</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="checkout.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container navbar">
+
+<a href="index.html" class="logo">NILE</a>
+
+<nav>
+
+<ul>
+
+<li><a href="shop.html">Shop</a></li>
+<li><a href="cart.html">Cart</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="checkout">
+
+<div class="container checkout-grid">
+
+<!-- CUSTOMER DETAILS -->
+
+<div class="checkout-form">
+
+<h2>Shipping Details</h2>
+
+<input type="text" id="fullName" placeholder="Full Name">
+
+<input type="email" id="email" placeholder="Email Address">
+
+<input type="text" id="phone" placeholder="Phone Number">
+
+<input type="text" id="country" placeholder="Country">
+
+<input type="text" id="city" placeholder="City">
+
+<input type="text" id="address" placeholder="Street Address">
+
+<input type="text" id="postalCode" placeholder="Postal Code">
+
+<h2>Payment</h2>
+
+<select id="paymentMethod"></select>
+
+<option>Credit / Debit Card</option>
+
+<option>Cash on Delivery</option>
+
+<option>PayPal</option>
+
+</select>
+
+<button id="placeOrder">
+
+Place Order
+
+</button>
+
+</div>
+
+<!-- ORDER SUMMARY -->
+
+<div class="order-summary">
+
+<h2>Order Summary</h2>
+
+<div id="checkoutItems">
+
+</div>
+
+<hr>
+
+<div class="total-row">
+
+<span>Total</span>
+
+<span id="checkoutTotal">$0</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<div id="toast"></div>
+
+<script src="toast.js"></script>
+<script src="checkout.js"></script>
+
+</body>
+
+</html>
